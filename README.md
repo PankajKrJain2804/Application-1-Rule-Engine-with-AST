@@ -30,13 +30,13 @@ and modification of these rules.
    git clone  https://github.com/PankajKrJain2804/Application-1-Rule-Engine-with-AST.git
 
    cd rule-engine-ast
-Create and Activate a Virtual Environment:
+- Create and Activate a Virtual Environment:
 
 sh
 
 python -m venv venv
 venv\Scripts\activate  # On Windows
-# source venv/bin/activate  # On macOS/Linux
+- source venv/bin/activate  # On macOS/Linux
 Install Dependencies:
 
 sh
@@ -88,21 +88,21 @@ Endpoint: /create_rule
 
 Method: POST
 
-Description: Takes a rule string and returns a Node object representing the corresponding AST.
+- Description: Takes a rule string and returns a Node object representing the corresponding AST.
 
 Combine Rules
 Endpoint: /combine_rules
 
 Method: POST
 
-Description: Takes a list of rule strings and combines them into a single AST.
+- Description: Takes a list of rule strings and combines them into a single AST.
 
 Evaluate Rule
 Endpoint: /evaluate_rule
 
 Method: POST
 
-Description: Takes a JSON representing the combined rule's AST and a dictionary of data containing attributes. Evaluates the rule against the provided data and returns True if the user is eligible based on the rule, False otherwise.
+- Description: Takes a JSON representing the combined rule's AST and a dictionary of data containing attributes. Evaluates the rule against the provided data and returns True if the user is eligible based on the rule, False otherwise.
 
 Test Cases
 System Setup:
@@ -111,7 +111,7 @@ Verify that the system starts successfully and connects to the database.
 
 Data Retrieval:
 
-Simulate API calls and ensure the system retrieves and parses data correctly.
+- Simulate API calls and ensure the system retrieves and parses data correctly.
 
 Rule Evaluation:
 
